@@ -2,17 +2,6 @@
   <img src="logo.png" alt="PWA" height="200" />
 </div>
 
-<div align="center">
-  <a href="https://npmjs.org/package/@pwa/cli">
-    <img src="https://badgen.now.sh/npm/v/@pwa/cli" alt="version" />
-  </a>
-  <a href="https://travis-ci.org/lukeed/pwa">
-    <img src="https://badgen.now.sh/travis/lukeed/pwa" alt="travis" />
-  </a>
-  <a href="https://npmjs.org/package/@pwa/cli">
-    <img src="https://badgen.now.sh/npm/dm/@pwa/cli" alt="downloads" />
-  </a>
-</div>
 
 ---
 
