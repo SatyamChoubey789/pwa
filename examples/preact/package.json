@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "pwa export --wait 1e3",
+    "start": "sirv build -s",
+    "watch": "pwa watch"
+  },
+  "dependencies": {
+    "preact": "^8.2.9",
+    "preact-router": "latest",
+    "sirv-cli": "^0.1.5"
+  },
+  "devDependencies": {
+    "@pwa/cli": "^0.0.2",
+    "@pwa/preset-preact": "^0.0.2",
+  }
+}

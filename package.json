@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "pretest": "lerna bootstrap --hoist && eslint packages/*",
+    "test": "tape -r module-alias/register test/**/*.js | tap-spec"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "lerna": "^3.4.1",
+    "module-alias": "^2.1.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "_moduleAliases": {
+    "@": "packages"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 10
+    },
+    "rules": {
+      "no-console": 1,
+      "no-cond-assign": 0,
+      "no-inner-declarations": 0
+    }
+  },
+  "eslintIgnore": [
+    "**/node_modules/**",
+    "packages/cli/templates/**"
+  ]
+}

@@ -1,0 +1,46 @@
+<Nav />
+
+<main>
+	{#if is404}
+		<Error404 {uri} />
+	{:else}
+		<svelte:component this={ route } />
+	{/if}
+</main>
+
+<style>
+	main {
+		position: relative;
+		max-width: 56em;
+		background-color: white;
+		padding: 2em;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+</style>
+
+<script>
+	import Navaid from 'navaid';
+	import Nav from '@components/Nav';
+	import Error404 from '@components/Error404';
+
+	export default {
+		data() {
+			return {
+				route: null
+			}
+		},
+
+		components: { Nav, Error404 },
+
+		oncreate() {
+			let on404 = uri => this.set({ is404:1, uri });
+			let draw = m => this.set({ is404:0, route:m.default });
+
+			Navaid('/', on404)
+				.on('/', () => import('@pages/index').then(draw))
+				.on('/about', () => import('@pages/about').then(draw))
+				.listen();
+		}
+	};
+</script>

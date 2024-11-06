@@ -1,0 +1,30 @@
+{
+  "name": "@pwa/cli",
+  "version": "0.5.4",
+  "bin": {
+    "pwa": "bin.js"
+  },
+  "files": [
+    "*.js",
+    "lib",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "@pwa/core": "^0.5.4",
+    "chrome-launcher": "^0.13.1",
+    "chrome-remote-interface": "0.25.x",
+    "kleur": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "prompts": "^1.2.1",
+    "rimraf": "^2.6.2",
+    "sade": "^1.7.0",
+    "sirv": "^0.4.0",
+    "templite": "^1.1.0",
+    "totalist": "^1.0.1",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-format-messages": "^2.0.1"
+  }
+}

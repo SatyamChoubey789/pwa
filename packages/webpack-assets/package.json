@@ -1,0 +1,13 @@
+{
+  "name": "@pwa/webpack-assets",
+  "version": "0.5.3",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "totalist": "^1.0.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "pwa export",
+    "start": "sirv build -s",
+    "watch": "pwa watch"
+  },
+  "dependencies": {
+    "ganalytics": "latest",
+    "sirv-cli": "latest"
+  },
+  "devDependencies": {
+    "@pwa/cli": "^0.3.2",
+    "@pwa/plugin-sw-precache": "^0.3.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "html-webpack-inline-source-plugin": "^0.0.10"
+  }
+}

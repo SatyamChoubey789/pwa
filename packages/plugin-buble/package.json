@@ -1,0 +1,17 @@
+{
+  "name": "@pwa/plugin-buble",
+  "version": "0.5.0",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "buble": "^0.19.3",
+    "buble-loader": "^0.5.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
